@@ -17,23 +17,23 @@
 
 ### promiseGet
 
-	‘’‘
+	
 		$dy.promiseGet('/api/:id').catch( error => {
           // dosomething          // => 这里就是catch到了error，如果处理error以及返还合适的值
         }).then( value => {
           // dosomething          // 这里就是final
         })
-	’‘’
+	
 
 ### promisePost
 
-	‘’‘
+	
 		$dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
           dosomething          // => 这里就是catch到了error，如果处理error以及返还合适的值
         }).then( value => {
           dosomething          // 这里就是final
         })
-	’‘’
+	
 
 ### GetRequest
 	
