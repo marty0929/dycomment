@@ -1,19 +1,19 @@
 ## 公共方法
 	
 整理一些常用的方法：
-    - promiseGet
-    - promisePost
-    - GetRequest
-    - Ajax
-       - url: string,
-       - type: get | post, 默认为post
-       - param: {usrename:123},
-	   - datatype: json | xml,
-	   - async : true | false, (默认为true)
-	   - jsonp: callback,
-	   - jsonpCallback: 默认为你添加一个函数名，
-	   - success: (res) => {},
-	   - error: () => {}
+- promiseGet
+- promisePost
+- GetRequest
+- Ajax
+   - url: string,
+   - type: get | post, 默认为post
+   - param: {usrename:123},
+   - datatype: json | xml,
+   - async : true | false, (默认为true)
+   - jsonp: callback,
+   - jsonpCallback: 默认为你添加一个函数名，
+   - success: (res) => {},
+   - error: () => {}
 
 ### promiseGet
 
