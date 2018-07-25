@@ -19,7 +19,7 @@
 
 ### promiseGet
 
-```
+``` javascript
 $dy.promiseGet('/api/:id').catch( error => {
   // dosomething          // => 这里就是catch到了error，如果处理error以及返还合适的值
 }).then( value => {
@@ -43,11 +43,13 @@ $dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
 
 ### GetRequest
    
-`value = $dy.GetRequest(key);`
+``` javascript
+value = $dy.GetRequest(key);
+```
 
 ### Ajax
 
-```
+``` javascript
 //定义接受的参数
 data ={
     url: string,
@@ -65,7 +67,7 @@ data ={
 
 #### post/get请求
 
-```
+``` javascript
 $dy.Ajax({
     url: './index.php',
     type: 'post',
@@ -84,7 +86,7 @@ $dy.Ajax({
 
 #### jsonp请求
 	
-```
+``` javascript
 $dy.Aajax({
     url: 'http://api.douban.com/v2/movie/in_theaters',
     type: 'get',
