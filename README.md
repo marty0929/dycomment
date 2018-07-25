@@ -1,10 +1,10 @@
 ## 公共方法
 	
 整理一些常用的方法：
-- [promiseGet](#promiseGet)
-- [promisePost](#promisePost)
-- [GetRequest](#GetRequest)
-- [Ajax](#Ajax)
+- [promiseGet](#promiseget)
+- [promisePost](#promisepost)
+- [GetRequest](#getrequest)
+- [Ajax](#ajax)
    - url: string,
    - type: get | post, 默认为post
    - param: {usrename:123},
