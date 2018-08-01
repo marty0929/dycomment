@@ -15,11 +15,13 @@
    - success: (res) => {},
    - error: () => {}
 
---
+---
 
 ### promiseGet
 
-``` javascript
+promise的get方法，示例：
+
+```
 $dy.promiseGet('/api/:id').catch( error => {
   // dosomething          // => 这里就是catch到了error，如果处理error以及返还合适的值
 }).then( value => {
@@ -31,7 +33,9 @@ $dy.promiseGet('/api/:id').catch( error => {
 
 ### promisePost
 
-``` javascript
+promise的post方法，示例：
+
+```
 $dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
   dosomething          // => 这里就是catch到了error，如果处理error以及返还合适的值
 }).then( value => {
@@ -42,14 +46,18 @@ $dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
 	
 
 ### GetRequest
+
+获取url中的参数值，示例：
    
-``` javascript
+```
 value = $dy.GetRequest(key);
 ```
 
 ### Ajax
 
-``` javascript
+普通ajax办法，包含get和post请求，可以使用jsonp。示例：
+
+```
 //定义接受的参数
 data ={
     url: string,
@@ -64,10 +72,9 @@ data ={
 }
 ```
 	   
+- post/get请求
 
-#### post/get请求
-
-``` javascript
+```
 $dy.Ajax({
     url: './index.php',
     type: 'post',
@@ -84,9 +91,9 @@ $dy.Ajax({
 ```
 	   
 
-#### jsonp请求
+- jsonp请求
 	
-``` javascript
+```
 $dy.Aajax({
     url: 'http://api.douban.com/v2/movie/in_theaters',
     type: 'get',
@@ -104,6 +111,34 @@ $dy.Aajax({
 })
 ```
 	   
+### decode/encode 解码/编码
+
+可以对字符串进行编码/解码。示例：
+
+```
+//编码
+var encodestr = $dy.encode('Hello World');
+//解码
+var decodestr = $dy.decode(encodestr);
+
+```
+
+回调函数的调用。示例：
+
+```
+var encodestr = $dy.encode('Hello World',function(str){
+  console.log(str);
+  return str;
+});
+
+var decodestr = $dy.encode(encodestr,function(str){
+  console.log(str)
+  return str;
+});
+
+```
+
+
 
 
 

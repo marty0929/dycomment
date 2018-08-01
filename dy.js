@@ -48,7 +48,6 @@
         return object[value];
     },
     Ajax:(data) => {
-    
         // 兼容IE浏览器
         var xhr = window.XMLHttpRequest?(new XMLHttpRequest()):(new ActiveXObject('Microsoft.XMLHTTP'));
         data.async = data.async || true;
@@ -107,5 +106,14 @@
                 }
             }
         }
+    },
+    decode:(a,b) => {
+        let str = window.atob(a);  //解码
+        return b?b(str):str;
+    },
+    encode:(a,b) => {
+        let str = window.btoa(a);  //编码
+        return b?b(str):str;
     }
+
 }
