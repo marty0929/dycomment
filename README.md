@@ -126,7 +126,7 @@ var decodestr = $dy.decode(encodestr);
 
 ```
 
-回调函数的调用。示例：
+>回调函数的调用。示例：
 
 ```
 var encodestr = $dy.encode('Hello World',function(str){
