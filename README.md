@@ -14,12 +14,15 @@
    - jsonpCallback: 默认为你添加一个函数名，
    - success: (res) => {},
    - error: () => {}
+- [decode/encode](#decodeencode)
+
 
 ---
 
+
 ### promiseGet
 
-promise的get方法，示例：
+    promise的get方法，示例：
 
 ```
 $dy.promiseGet('/api/:id').catch( error => {
@@ -33,7 +36,7 @@ $dy.promiseGet('/api/:id').catch( error => {
 
 ### promisePost
 
-promise的post方法，示例：
+    promise的post方法，示例：
 
 ```
 $dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
@@ -47,7 +50,7 @@ $dy.promisePost('/api/:id',{name:'marty',age:'28'}).catch( error => {
 
 ### GetRequest
 
-获取url中的参数值，示例：
+    获取url中的参数值，示例：
    
 ```
 value = $dy.GetRequest(key);
@@ -55,7 +58,7 @@ value = $dy.GetRequest(key);
 
 ### Ajax
 
-普通ajax办法，包含get和post请求，可以使用jsonp。示例：
+    普通ajax办法，包含get和post请求，可以使用jsonp。示例：
 
 ```
 //定义接受的参数
@@ -111,9 +114,9 @@ $dy.Aajax({
 })
 ```
 	   
-### decode/encode 解码/编码
+### decode/encode
 
-可以对字符串进行编码/解码。示例：
+    可以对字符串进行编码/解码。示例：
 
 ```
 //编码
